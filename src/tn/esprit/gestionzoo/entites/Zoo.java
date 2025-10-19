@@ -82,6 +82,19 @@ public class Zoo  {
             return z2;
         }
     }
+    public float getMaxPenguinDepth() {
+        float maxDepth = 0;
+        for (int i = 0; i < count; i++) {
+            if (animals[i] instanceof Penguin) {
+                Penguin p = (Penguin) animals[i];
+                if (p.swimmingDepth > maxDepth) {
+                    maxDepth = p.swimmingDepth;
+                }
+            }
+        }
+        return maxDepth;
+    }
+
 
 }
 

@@ -65,5 +65,10 @@ public class Main {
 
         System.out.println("\n------ Zoo après ajout des animaux spécialisés ------");
        // myzoo.displayAnimals();
+        Aquatic[] aquaticAnimals = {shark, flipper, skipper};
+        for (Aquatic a : aquaticAnimals) {
+            a.swim(); // polymorphisme : chaque classe affiche son message
+        }
+
     }
 }
